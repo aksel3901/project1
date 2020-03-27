@@ -1,8 +1,7 @@
 {% if all_courses %}
     <ul>
     {% for course in all_courses %}
-        <!-- <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li> -->
-        <li> course name: {{ course.name }} </li>
+        <li><a href="/tutoring/courses/{{ course.id }}/"> {{ course.name }} </a></li>
     {% endfor %}
     </ul>
 {% else %}
