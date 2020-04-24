@@ -15,3 +15,6 @@ def detail(request, course_id):
     context = {'course' : course, }
     return render(request, 'noble_tutoring/course.html', context)
     # return HttpResponse("You're looking at course %s" % course_id)
+
+def homepage_view(request):
+    return render(request, 'noble_tutoring/homepage.html')
